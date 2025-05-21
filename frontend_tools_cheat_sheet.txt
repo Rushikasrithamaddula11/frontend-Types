@@ -1,0 +1,72 @@
+
+Frontend Development Tools & Commands Cheat Sheet
+
+1. Node.js & npm
+----------------
+node -v                   # Check Node.js version
+npm -v                    # Check npm version
+npm init                  # Create package.json
+npm install <package>     # Install a package locally
+npm install -g <package>  # Install a package globally
+npm start                 # Run start script
+
+2. React.js (Create React App)
+------------------------------
+npx create-react-app my-app
+cd my-app
+npm start                 # Start development server
+npm run build             # Build production version
+npm test                  # Run tests
+
+3. Vite
+--------
+npm create vite@latest
+cd project-name
+npm install
+npm run dev               # Start dev server
+npm run build             # Build production version
+
+4. Next.js
+-----------
+npx create-next-app@latest my-app
+cd my-app
+npm run dev               # Start dev server
+npm run build             # Build production version
+npm start                 # Start production server
+
+5. Tailwind CSS
+----------------
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+CSS Setup:
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+6. Webpack
+-----------
+npm install --save-dev webpack webpack-cli
+npx webpack               # Run webpack
+
+7. ESLint
+----------
+npm install eslint --save-dev
+npx eslint --init         # Setup config
+npx eslint .              # Lint all files
+
+8. Prettier
+------------
+npm install --save-dev prettier
+npx prettier --write .    # Format all files
+
+9. Parcel
+----------
+npm install -g parcel-bundler
+parcel index.html         # Start dev server
+parcel build index.html   # Build for production
+
+10. BrowserSync
+----------------
+npm install -g browser-sync
+browser-sync start --server --files "css/*.css, *.html"
